@@ -30,5 +30,5 @@ MongoClient.connect('mongodb://127.0.0.1:27017/TodoApp', { useNewUrlParser: true
     console.log(JSON.stringify(results, undefined, 2));
   });
 
-  // db.close();
+  // client.close();
 });
