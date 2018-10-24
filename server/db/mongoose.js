@@ -9,7 +9,7 @@ mongoose.connect(uri, {useNewUrlParser: true }).then(() =>
 {
     console.log(`Conected to ${uri}`);
 }, (err) =>{
-        console.log(`Unable to connect.`);
+        console.log(`Unable to connect ${uri}. ${err}`);
 }).catch((e) => {
 
 });
