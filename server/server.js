@@ -74,7 +74,7 @@ module.exports = {app};
 //     text: 'Cumpara paine',
 //     completed: true,
 //     completedAt: 6
-// });
+// });//
 
 // newTodo.save().then((doc) => {
 //     console.log('New todo added', doc);
