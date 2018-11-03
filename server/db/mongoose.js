@@ -1,7 +1,5 @@
 const mongoose = require('mongoose');
 
-//const {mdburi} = require('./../../temp/sec.js')
-
 let uri = process.env.DATABASE_URI || 'mongodb://127.0.0.1:27017/TodoApp';
 
 //mongoose.Promise = global.Promise;
