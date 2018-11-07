@@ -1,8 +1,8 @@
 const mongoose = require('mongoose');
 
-let uri = process.env.DATABASE_URI || 'mongodb://127.0.0.1:27017/TodoApp';
+let uri = process.env.DATABASE_URI || process.env.MONGODB_URI || 'mongodb://127.0.0.1:27017/TodoApp';
 
-//mongoose.Promise = global.Promise;
+mongoose.Promise = global.Promise;
 mongoose.connect(uri, {useNewUrlParser: true }).then(() =>
 {
     console.log(`Conected to ${uri}`);
@@ -11,7 +11,7 @@ mongoose.connect(uri, {useNewUrlParser: true }).then(() =>
 }).catch((e) => {
 
 });
-//console.log(mdburi())
+//console.log(mdburi())                                                         
 module.exports = {mongoose};
 
 //./../server
